@@ -40,7 +40,7 @@ class XCombine {
   public function run() {
     $this->common_parts_list = $this->createCommonPartsList();
     $this->page_list = $this->createPageList();
-        $this->mergeStylesheets();
+    $this->mergeStylesheets();
     $this->replaceStylesheets();
     $this->deleteStylesheets();
     $this->deleteLicense();
@@ -260,7 +260,7 @@ EOD;
    */
   private function deleteLicense() {
 
-    $license = PROJECT_DIR . "../license.txt";
+    $license = PROJECT_DIR . "../LICENSE";
 
     if (file_exists($license)) {
       $this->deleteFile($license);
