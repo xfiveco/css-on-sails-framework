@@ -8,7 +8,6 @@
   },
   "devDependencies": {
     "grunt": "^0.4.4",
-    "grunt-contrib-watch": "^0.6.0",
     "grunt-jsbeautifier": "^0.2.6",
     "grunt-cssbeautifier": "^0.1.1",
     "grunt-html-validation": "^0.1.14",
