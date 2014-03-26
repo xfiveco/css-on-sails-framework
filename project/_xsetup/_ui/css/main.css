@@ -1,0 +1,518 @@
+/*******************************************************************************
+
+  CSS on Sails Framework
+  Title: X-Setup
+  Author: XHTMLized (http://www.xhtmlized.com/)
+  Date: May 2011
+
+********************************************************************************
+
+  1. BASE
+      1.1 Reset
+      1.1.2 HTML5 Elements
+      1.2 Accessibility Navigation & Hide
+      1.3 Clearfix
+      1.4 Default Styles
+      1.4.2 Default CSS3 styles
+
+  2. COMMON
+      2.1 Container
+      2.2 Header
+      2.3 Navigation
+      2.4 Content
+      2.5 Sidebar
+      2.6 Footer
+
+*******************************************************************************/
+
+
+/* 1. BASE
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+
+/* 1.1 Reset
+------------------------------------------------------------------------------*/
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, samp, small, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a, ins, del {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th, td {
+  vertical-align: top;
+}
+
+th {
+  text-align: left;
+}
+
+
+/* 1.1.2 HTML5 Elements
+------------------------------------------------------------------------------*/
+
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+
+/* 1.2 Accessibility Navigation & Hide
+------------------------------------------------------------------------------*/
+
+#accessibility-nav, .hide {
+  position: absolute;
+  top: -999em;
+  left: -999em;
+  height: 1px;
+  width: 1px;
+}
+
+
+/* 1.3 Clearfix
+------------------------------------------------------------------------------*/
+
+.clearfix:after,
+.setup .options:after,
+.legend:after,
+.back:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+/* 1.4 Default Styles
+------------------------------------------------------------------------------*/
+
+body {
+  background: #e4e4e4 url(../images/common/bg_body.png) repeat-x;
+  color: #303030;
+  font: 81.25%/1.23 Arial, Helvetica, sans-serif;
+}
+
+hr {
+  display: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+th {
+  font-weight: normal;
+}
+
+address, cite, dfn {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #999;
+  cursor: help;
+}
+
+input, textarea, select {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a, a:visited {
+  color: #0068b5;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  color: #666;
+  text-decoration: underline;
+}
+
+
+/* 2. COMMON
+--------------------------------------------------------------------------------
+==============================================================================*/
+
+/* 2.1 Container
+------------------------------------------------------------------------------*/
+
+.container {
+  width: 944px;
+  position: relative;
+  margin: 40px auto 25px auto;
+}
+
+
+/* 2.2 Header
+------------------------------------------------------------------------------*/
+
+#header {
+  margin: 0 0 39px 29px;
+}
+
+#header h1 {
+  position: relative;
+  width: 138px;
+  height: 32px;
+  overflow: hidden;
+}
+
+#header h1 span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/common/sprite.png) no-repeat;
+}
+
+
+/* 2.3 Navigation
+------------------------------------------------------------------------------*/
+
+#navigation {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #ccc;
+}
+
+#navigation li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#navigation a {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+
+/* 2.4 Content
+------------------------------------------------------------------------------*/
+
+#content {
+  border: 1px solid #d2d2d2;
+  background: #fff url(../images/common/bg_content.png) bottom repeat-x;
+  -moz-border-radius: 10px;
+  -webkit-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+
+#content h2 {
+  padding: 28px 30px 58px 30px;
+  font-size: 20px;
+  color: #f04c23;
+  background: url(../images/common/bg_title.png) bottom no-repeat;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+#content h3 {
+  margin-bottom: 1em;
+  font-size: 15px;
+  color: #303030;
+}
+
+#content fieldset {
+  padding: 30px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+#content section {
+  padding: 0 30px 30px 30px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+#content ol {
+  margin-left: 17px;
+}
+
+#content ol li {
+  list-style: decimal;
+}
+
+.setup input[type=text] {
+  width: 153px;
+  padding: 3px 10px;
+  border: 1px solid #d2d2d2;
+  color: #303030;
+  background: #f2f2f2;
+  -moz-border-radius: 7px;
+  -webkit-radius: 7px;
+  border-radius: 7px;
+  -moz-box-shadow: inset 1px 1px 1px #d9d9d9;
+  -webkit-box-shadow: inset 1px 1px 1px #d9d9d9;
+  box-shadow: inset 1px 1px 1px #d9d9d9;
+}
+
+/* Set up */
+#content .project {
+  padding-top: 0;
+}
+
+.setup .project input {
+  width: 250px;
+}
+
+.setup .project li {
+  margin-top: 15px;
+}
+
+.setup .project .producers {
+  margin-left: 10px;
+  color: #666;
+}
+
+.setup .project li:first-child {
+  margin-top: 0;
+}
+
+.setup .project li label {
+  float: left;
+  display: block;
+  width: 125px;
+}
+
+/* Options */
+.setup .options div {
+  float: left;
+}
+
+.setup .options li {
+  float: left;
+  margin-right: 30px;
+}
+
+.setup .options .additional {
+  margin-left: 20px;
+}
+
+.setup .options label {
+  vertical-align: middle;
+}
+
+.setup .options input {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Files */
+.setup .files-list table {
+  margin-bottom: 10px;
+}
+
+.setup .files-list th {
+  font-weight: bold;
+}
+
+.setup .files-list th,
+.setup .files-list td {
+  padding: 5px 10px 5px 0;
+  vertical-align: middle;
+}
+
+.setup .pages td.file {
+  padding-right: 20px;
+}
+
+.setup .files-list .add {
+  margin-left: 20px;
+}
+
+.setup .files-list .add a,
+.setup .files-list .remove a {
+  display: inline-block;
+  padding: 5px 14px 3px 14px;
+  color: #f04c23;
+  border: 1px solid #e9e9e9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f4f4f4));
+  background-image: -webkit-linear-gradient(top, #fff, #f4f4f4);
+  background-image:    -moz-linear-gradient(top, #fff, #f4f4f4);
+  background-image:     -ms-linear-gradient(top, #fff, #f4f4f4);
+  background-image:      -o-linear-gradient(top, #fff, #f4f4f4);
+  -moz-border-radius: 7px;
+  -webkit-radius: 7px;
+  border-radius: 7px;
+  -moz-box-shadow: 0 1px 1px #d9d9d9;
+  -webkit-box-shadow: 0 1px 1px #d9d9d9;
+  box-shadow: 0 1px 1px #d9d9d9;
+}
+
+.setup .files-list .remove a {
+  color: #696969;
+}
+
+#content .common {
+  counter-reset: common;
+}
+
+#content .common .num:after {
+  content: counter(common) ".";
+  counter-increment: common;
+}
+
+#content .pages {
+  counter-reset: pages;
+}
+
+#content .pages .num:after {
+  content: counter(pages) ".";
+  counter-increment: pages;
+}
+
+/* Combine */
+#content .combine .submit {
+  padding-top: 0;
+}
+
+.combine label,
+.combine input {
+  vertical-align: middle;
+}
+
+#content .combine-report h3 {
+  margin: 1.5em 0 0.25em 0;
+  font-size: 1.17em;
+}
+
+#content .combine-report h3.first {
+  margin-top: 0;
+}
+
+#content .combine-report h4 {
+  margin: 1em 0 0.25em 0;
+  font-size: 1em;
+}
+
+/* Submit & Back */
+.submit input,
+.back a {
+  display: block;
+  cursor: pointer;
+  padding: 4px 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 0;
+  background: #f04e25;
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f18063), to(#f04e25));
+  background-image: -webkit-linear-gradient(top, #f18063, #f04e25);
+  background-image:    -moz-linear-gradient(top, #f18063, #f04e25);
+  background-image:     -ms-linear-gradient(top, #f18063, #f04e25);
+  background-image:      -o-linear-gradient(top, #f18063, #f04e25);
+  -moz-border-radius: 10px;
+  -webkit-radius: 10px;
+  border-radius: 10px;
+}
+
+.submit input:hover,
+.back a:hover {
+  background: #f04e25;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f04e25), to(#f18063));
+  background-image: -webkit-linear-gradient(top, #f04e25, #f18063);
+  background-image:    -moz-linear-gradient(top, #f04e25, #f18063);
+  background-image:     -ms-linear-gradient(top, #f04e25, #f18063);
+  background-image:      -o-linear-gradient(top, #f04e25, #f18063);
+  text-decoration: none;
+}
+
+.back {
+  padding: 20px 30px;
+}
+
+.back li {
+  float: left;
+  margin-right: 10px;
+}
+
+.back a {
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* Results */
+.results li {
+  margin-bottom: 10px;
+}
+
+.results li.success,
+.results li.error {
+  padding: 2px 0 2px 30px;
+  background: url(../images/common/icon_results.png) 0 0 no-repeat;
+}
+
+.results li.error {
+  color: #f04c23;
+  background-position: 0 -80px;
+}
+
+
+/* 2.6 Footer
+------------------------------------------------------------------------------*/
+
+#footer {
+  clear: both;
+  padding: 30px;
+  font-size: 12px;
+  color: #676767;
+}
+
+#footer .xhtmlized {
+  display: inline-block;
+  width: 81px;
+  height: 17px;
+  position: relative;
+  top: -2px;
+  margin-left: 8px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+#footer .xhtmlized span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(../images/common/sprite.png) 0 -35px no-repeat;
+
+}

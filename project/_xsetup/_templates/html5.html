@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>{project_name} - {page_title}</title>
+  <link rel="stylesheet" media="all" href="_ui/css/all.css">
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '');</script>
+</head>
+<body>
+
+<div class="container">
+
+  <nav class="accessibility-nav">
+    <ol>
+      <li><a href="#navigation">Skip to navigation</a></li>
+      <li><a href="#content">Skip to content</a></li>
+    </ol>
+  </nav>
+  <!-- / accessibility-nav -->
+  <hr>
+
+  <header class="header">
+    <h1 class="ir site-name">Site Name<span></span></h1>
+    <!-- <a href="#" rel="index" title="Go to homepage" class="ir site-name">Site Name<span></span></a> -->
+  </header>
+  <!-- / header -->
+  <hr>
+
+  <nav class="navigation" id="navigation">
+    <ul>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+    </ul>
+  </nav>
+  <!-- / navigation -->
+  <hr>
+
+  <div class="content" id="content">
+    <p>content</p>
+{wp}
+  </div>
+  <!-- / content -->
+  <hr>
+
+  <aside class="sidebar">
+    <p>sidebar</p>
+  </aside>
+  <!-- / sidebar -->
+  <hr>
+
+  <footer class="footer">
+    <p>footer</p>
+  </footer>
+  <!-- / footer -->
+
+</div>
+<!-- / container -->
+
+<script src="http://code.jquery.com/jquery-{jquery_version}.min.js"></script>
+<script>window.jQuery || document.write("<script src='_ui/js/jquery-{jquery_version}.min.js'>\x3C/script>")</script>
+<script src="http://cssonsails.org/xprecise/xprecise.min.js"></script>
+<script src="_ui/js/main.js"></script>
+</body>
+</html>
