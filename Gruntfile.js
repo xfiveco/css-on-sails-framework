@@ -6,15 +6,13 @@ module.exports = function(grunt) {
 
     // Beautify HTML & CSS files
     jsbeautifier: {
-      dist: {
-        src: ['project/*.html', 'project/_ui/js/main.js'],
-        options : {
-          html: {
-            indentSize: 2
-          },
-          js: {
-            indentSize: 2
-          }
+      files: ['project/*.html', 'project/_ui/js/main.js'],
+      options : {
+        html: {
+          indentSize: 2
+        },
+        js: {
+          indentSize: 2
         }
       }
     },
@@ -31,7 +29,7 @@ module.exports = function(grunt) {
 
     // Validate HTML files
     validation: {
-      src: ['project/*.html'],
+      files: ['project/*.html'],
       options: {
         reset: true
       }
@@ -39,12 +37,12 @@ module.exports = function(grunt) {
 
     // Check JS code
     jshint: {
-      src: ['project/_ui/js/main.js'],
+      files: ['project/_ui/js/main.js'],
       options: {
-        jshintrc: true
+        jshintrc: true,
+        reporter: require('jshint-stylish')
       }
     }
-
   });
 
   grunt.loadNpmTasks('grunt-jsbeautifier');
