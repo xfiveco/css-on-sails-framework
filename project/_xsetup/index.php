@@ -73,7 +73,7 @@ if (Tools::isFrameworkSetup()) {
           <h3>jQuery version</h3>
           <div>
             <select name="jquery_version">
-              <option value="1.10.2" selected="selected">1.10.2</option>
+              <option value="1.11.0" selected="selected">1.11.0</option>
               <option value="1.8.3">1.8.3</option>
             </select>
           </div>
