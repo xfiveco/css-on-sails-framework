@@ -4,6 +4,7 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
+    // Beautify HTML & CSS files
     jsbeautifier: {
       dist: {
         src: ['project/*.html', 'project/_ui/js/main.js'],
@@ -18,10 +19,17 @@ module.exports = function(grunt) {
       }
     },
 
+    // Beautify CSS files
     cssbeautifier: {
-      files: ['project/_ui/css/*.css']
+      files: ['project/_ui/css/*.css'],
+      options : {
+        indent: '  ',
+        openbrace: 'end-of-line',
+        autosemicolon: false
+      }
     },
 
+    // Validate HTML files
     validation: {
       src: ['project/*.html'],
       options: {
@@ -29,6 +37,7 @@ module.exports = function(grunt) {
       }
     },
 
+    // Check JS code
     jshint: {
       src: ['project/_ui/js/main.js'],
       options: {

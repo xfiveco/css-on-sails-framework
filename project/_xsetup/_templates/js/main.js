@@ -32,7 +32,7 @@
     myFeature2: function() {
       alert("Override myFeature1 and myFeature2 with your custom functions");
     }
-  }
+  };
 
   /*
   $(function() {
