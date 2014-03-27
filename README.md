@@ -11,7 +11,7 @@ In the meanwhile, this is a new, open source version of the framework with some 
 
 ## Grunt tasks
 
-The framework is not dependent on Grunt but the following Grunt tasks are available to improve quality of your work and make it easier:
+The framework is not dependent on Grunt but the following Grunt tasks are available to make your work easier and to improve its quality:
 
 * `jsbeautifier` - HTML / JS beautification of HTML files and main.js
 * `cssbeautifier` - beautification of main.css
@@ -23,7 +23,7 @@ The framework is not dependent on Grunt but the following Grunt tasks are availa
 CSS on Sails Framework and X-Setup works like before and as described at docs.cssonsails.org. To take advantage of the available Grunt tasks do the following:
 
 
-1. Install [node.js](http://nodejs.org) (skip if you have it invstalled already)
+1. Install [node.js](http://nodejs.org) (skip if you have it installed already)
 
 2. Install Grunt from the command line (skip if you have it installed already)
 
