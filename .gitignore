@@ -1,7 +1,6 @@
 # Ignore docs files
 _gh_pages
 _site
-.ruby-version
 
 # Numerous always-ignore extensions
 *.diff
@@ -38,3 +37,5 @@ bower_components
 # Other
 validation-report.json
 validation-status.json
+.ruby-version
+.ruby-gemset

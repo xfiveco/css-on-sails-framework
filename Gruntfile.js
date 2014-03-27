@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    // Beautify HTML & CSS files
+    // Beautify HTML & JS files
     jsbeautifier: {
       files: ['project/*.html', 'project/_ui/js/main.js'],
       options : {
