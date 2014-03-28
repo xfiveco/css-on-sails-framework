@@ -256,7 +256,7 @@ class XSetup {
     $i = 1;
     $pages = $this->getPageList();
     foreach ($pages as $page) {
-      $list .=  "\t\t3." . $i . " " . $page["title"] . "\n";
+      $list .=  "    3." . $i . " " . $page["title"] . "\n";
       $i += 1;
     }
     return $list;
@@ -424,11 +424,11 @@ class XSetup {
         }
 
         if ($this->responsive) {
-          $responsive_replace = "\t4. RESPONSIVE";
-          $print_replace = "\t5. PRINT";
+          $responsive_replace = "  4. RESPONSIVE";
+          $print_replace = "  5. PRINT";
         } else {
           $responsive_replace = "";
-          $print_replace = "\t4. PRINT";
+          $print_replace = "  4. PRINT";
         }
 
         if ($this->nobranding) {
