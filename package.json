@@ -12,6 +12,8 @@
     "grunt-cssbeautifier": "^0.1.1",
     "grunt-html-validation": "^0.1.14",
     "grunt-contrib-jshint": "^0.9.2",
-    "jshint-stylish": "^0.1.5"
+    "jshint-stylish": "^0.1.5",
+    "jit-grunt": "^0.3.2",
+    "time-grunt": "^0.3.1"
   }
 }
