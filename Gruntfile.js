@@ -1,5 +1,11 @@
 module.exports = function(grunt) {
 
+  require('time-grunt')(grunt);
+
+  require('jit-grunt')(grunt,  {
+    validation: 'grunt-html-validation'
+  });
+
   grunt.initConfig({
 
     pkg: grunt.file.readJSON('package.json'),
@@ -44,11 +50,6 @@ module.exports = function(grunt) {
       }
     }
   });
-
-  grunt.loadNpmTasks('grunt-jsbeautifier');
-  grunt.loadNpmTasks('grunt-cssbeautifier');
-  grunt.loadNpmTasks('grunt-html-validation');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.registerTask('default', [
     'jsbeautifier',
