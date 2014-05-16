@@ -1,9 +1,7 @@
 CSS on Sails Framework
 ======================
 
-CSS on Sails Framework is a simple and flexible framework used as the foundation for XHTMLized projects in 2010 - 2014. It's soon to be replaced with more flexible solution.
-
-In the meanwhile, this is a new, open source version of the framework with some additional improvements.
+CSS on Sails Framework was a simple and flexible framework used as the foundation for XHTMLized projects in 2010 - 2013. It's now replaced with [XH Generator](https://github.com/xhtmlized/generator-xh).
 
 ## Editorconfig
 
